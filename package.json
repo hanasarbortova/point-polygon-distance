@@ -1,0 +1,23 @@
+{
+  "name": "point-polygon-distance",
+  "version": "0.0.0",
+  "description": "Compute distance of a point from an arbitray shaped polygon",
+  "main": "point-polygon-distance.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hanasarbortova/point-polygon-distance.git"
+  },
+  "keywords": [
+    "distance",
+    "point",
+    "polygon"
+  ],
+  "author": "Hana Sarbortova",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/hanasarbortova/point-polygon-distance/issues"
+  }
+}
