@@ -30,7 +30,7 @@ module.exports = function(polygon, point, orientation) {
 			dist = det/Math.sqrt(dot_u)
 			if(dist <= 0 && dist > max_neg){
 				max_neg = dist
-			}else if(dist < min_pos){
+			}else if(dist>= 0 && dist < min_pos){
 				min_pos = dist
 			}
 		}
@@ -40,7 +40,7 @@ module.exports = function(polygon, point, orientation) {
 		console.log(max_neg)
 		console.log(min_pos)
 		
-	if(min_pos == Number.MAX_VALUE && max_neg == -Number.MAX_VALUE){ // sitance from corners if no projection to line segments
+	if(min_pos == Number.MAX_VALUE && max_neg == -Number.MAX_VALUE){ // distance from corners if no projection to line segments
 		var tmp 
 		dist = Number.MAX_VALUE;
 		for(i = 0; i < polygon.length; i++){
