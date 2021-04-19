@@ -30,7 +30,7 @@ module.exports = function(polygon, point, orientation) {
 			dist = det/Math.sqrt(dot_u)
 			if(dist <= 0 && dist > max_neg){
 				max_neg = dist
-			}else if(dist < min_pos){
+			}else if(dist>= 0 && dist < min_pos){
 				min_pos = dist
 			}
 		}
